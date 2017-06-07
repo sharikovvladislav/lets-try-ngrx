@@ -7,5 +7,6 @@ import { NotFound404Component } from './not-found404.component';
 export const routes: Routes = [
   { path: '', component: DashboardComponent, pathMatch: 'full' },
   { path: 'lazy', loadChildren: './features/lazy/index#LazyModule' },
+  { path: 'myComponent', loadChildren: './features/myComponent/index#MyComponentModule' },
   { path: '**', component: NotFound404Component }
 ];

@@ -10,6 +10,11 @@ export const views: Object[] = [
     link: ['lazy']
   },
   {
+    name: 'My Component',
+    icon: 'file_download',
+    link: ['myComponent']
+  },
+  {
     name: 'Bad Link',
     icon: 'error',
     link: ['wronglink']

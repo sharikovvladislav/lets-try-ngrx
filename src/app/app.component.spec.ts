@@ -32,10 +32,19 @@ describe('App Component', () => {
     });
   });
 
-  it('should contain app text', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    expect(fixture.nativeElement).toContainText('Angular Starter App');
-  }));
+  describe('should contain texts' ,  () => {
+    let fixture;
+
+    beforeEach(() => {
+      fixture = TestBed.createComponent(AppComponent);
+      fixture.detectChanges();
+    });
+    it('should contain app text', async(() => {
+      expect(fixture.nativeElement).toContainText('Angular Starter App');
+    }));
+    it('should contain My Component', async(() => {
+      expect(fixture.nativeElement).toContainText('My Component');
+    }));
+  });
 
 });
